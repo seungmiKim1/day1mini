@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Digital Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body> 
+    
+
+    <p align="center" id="todayDate"><MARQUEE direction="up" scrollplay="200">THE DATE </MARQUEE></p>
+    <p align="center">🗓️오늘의 날짜</p>
+    <!--<div class="date"> 
+        <div id="year">년</div>
+        <div id="month">월</div>
+        <div id="day"> 일</div> 
+    </div>-->
+    
+    <div id="showDate"></div>
+        <script>
+            date = new Date().toLocaleDateString();
+            document.write(date);
+        </script>
+    </div>
+
+    <div class="clock">
+        <div id="hour">00</div>
+        <span>시</span>
+        <div id="min">00</div>
+        <span>분</span>
+        <div id="sec">00</div>
+        <span>초</span>
+
+    </div>
+
+
+
+    <script src="script.js"></script> <!--script 태그 위치가 맨 상단으로 가면 시간은 00:00:00으로 멈춘다. -->
+ 
+
+
+</body>
+
+
+
+
+</html>
